@@ -1,7 +1,6 @@
-CMakeFiles/identity.dir/identity.cc.o: \
- /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/identity.cc \
- /usr/include/stdc-predef.h /usr/include/c++/12/algorithm \
- /usr/include/c++/12/bits/stl_algobase.h \
+CMakeFiles/row_sum.dir/row_sum.cc.o: \
+ /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/row_sum.cc \
+ /usr/include/stdc-predef.h /usr/include/c++/12/cstdint \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,13 +12,27 @@ CMakeFiles/identity.dir/identity.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
  /usr/include/c++/12/pstl/pstl_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
+ /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/type_traits \
+ /usr/include/c++/12/bits/move.h /usr/include/c++/12/bits/utility.h \
+ /usr/include/c++/12/initializer_list \
+ /home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include/xla/ffi/api/c_api.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+ /home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include/xla/ffi/api/ffi.h \
+ /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/c++/12/bits/functexcept.h \
  /usr/include/c++/12/bits/exception_defines.h \
  /usr/include/c++/12/bits/cpp_type_traits.h \
  /usr/include/c++/12/ext/type_traits.h \
  /usr/include/c++/12/ext/numeric_traits.h \
- /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/type_traits \
- /usr/include/c++/12/bits/move.h /usr/include/c++/12/bits/utility.h \
  /usr/include/c++/12/bits/stl_iterator_base_types.h \
  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/12/bits/concept_check.h \
@@ -29,29 +42,22 @@ CMakeFiles/identity.dir/identity.cc.o: \
  /usr/include/c++/12/bits/predefined_ops.h \
  /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
- /usr/include/c++/12/initializer_list /usr/include/c++/12/bits/stl_heap.h \
+ /usr/include/c++/12/bits/stl_heap.h \
  /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/stl_construct.h /usr/include/c++/12/new \
  /usr/include/c++/12/bits/exception.h \
  /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/cstdlib \
- /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -72,13 +78,8 @@ CMakeFiles/identity.dir/identity.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include/xla/ffi/api/c_api.h \
- /home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include/xla/ffi/api/ffi.h \
- /usr/include/c++/12/atomic /usr/include/c++/12/bits/atomic_base.h \
+ /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/atomic \
+ /usr/include/c++/12/bits/atomic_base.h \
  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12/cassert /usr/include/assert.h \
  /usr/include/c++/12/complex /usr/include/c++/12/cmath \
@@ -213,8 +214,7 @@ CMakeFiles/identity.dir/identity.cc.o: \
  /usr/include/c++/12/pstl/glue_memory_defs.h /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /usr/include/c++/12/optional /usr/include/c++/12/utility \
- /usr/include/c++/12/bits/stl_relops.h /usr/include/c++/12/variant \
+ /usr/include/c++/12/optional /usr/include/c++/12/variant \
  /usr/include/c++/12/bits/parse_numbers.h \
  /home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include/xla/ffi/api/api.h \
  /usr/include/c++/12/iterator /usr/include/c++/12/bits/stream_iterator.h

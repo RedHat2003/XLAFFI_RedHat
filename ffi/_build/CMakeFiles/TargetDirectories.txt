@@ -1,3 +1,5 @@
-/home/redhat_pc/redhat_files/projects/SEE/ffi/_build/CMakeFiles/identity.dir
-/home/redhat_pc/redhat_files/projects/SEE/ffi/_build/CMakeFiles/edit_cache.dir
-/home/redhat_pc/redhat_files/projects/SEE/ffi/_build/CMakeFiles/rebuild_cache.dir
+/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles/rms_norm.dir
+/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles/row_sum.dir
+/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles/identity.dir
+/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles/edit_cache.dir
+/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles/rebuild_cache.dir

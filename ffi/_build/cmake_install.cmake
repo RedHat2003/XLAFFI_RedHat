@@ -1,4 +1,4 @@
-# Install script for directory: /home/redhat_pc/redhat_files/projects/SEE/ffi
+# Install script for directory: /home/redhat_pc/redhat_files/projects/XLAFFI/ffi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/redhat_pc/redhat_files/projects/SEE/ffi/_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/redhat_pc/redhat_files/projects/SEE/ffi
+CMAKE_SOURCE_DIR = /home/redhat_pc/redhat_files/projects/XLAFFI/ffi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/redhat_pc/redhat_files/projects/SEE/ffi/_build
+CMAKE_BINARY_DIR = /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/SEE/ffi/_build/CMakeFiles /home/redhat_pc/redhat_files/projects/SEE/ffi/_build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/SEE/ffi/_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,6 +115,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named rms_norm
+
+# Build rule for target.
+rms_norm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rms_norm
+.PHONY : rms_norm
+
+# fast build rule for target.
+rms_norm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rms_norm.dir/build.make CMakeFiles/rms_norm.dir/build
+.PHONY : rms_norm/fast
+
+#=============================================================================
+# Target rules for targets named row_sum
+
+# Build rule for target.
+row_sum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 row_sum
+.PHONY : row_sum
+
+# fast build rule for target.
+row_sum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/row_sum.dir/build.make CMakeFiles/row_sum.dir/build
+.PHONY : row_sum/fast
 
 #=============================================================================
 # Target rules for targets named identity
@@ -153,6 +179,54 @@ identity.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/identity.dir/build.make CMakeFiles/identity.dir/identity.cc.s
 .PHONY : identity.cc.s
 
+rms_norm.o: rms_norm.cc.o
+.PHONY : rms_norm.o
+
+# target to build an object file
+rms_norm.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rms_norm.dir/build.make CMakeFiles/rms_norm.dir/rms_norm.cc.o
+.PHONY : rms_norm.cc.o
+
+rms_norm.i: rms_norm.cc.i
+.PHONY : rms_norm.i
+
+# target to preprocess a source file
+rms_norm.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rms_norm.dir/build.make CMakeFiles/rms_norm.dir/rms_norm.cc.i
+.PHONY : rms_norm.cc.i
+
+rms_norm.s: rms_norm.cc.s
+.PHONY : rms_norm.s
+
+# target to generate assembly for a file
+rms_norm.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rms_norm.dir/build.make CMakeFiles/rms_norm.dir/rms_norm.cc.s
+.PHONY : rms_norm.cc.s
+
+row_sum.o: row_sum.cc.o
+.PHONY : row_sum.o
+
+# target to build an object file
+row_sum.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/row_sum.dir/build.make CMakeFiles/row_sum.dir/row_sum.cc.o
+.PHONY : row_sum.cc.o
+
+row_sum.i: row_sum.cc.i
+.PHONY : row_sum.i
+
+# target to preprocess a source file
+row_sum.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/row_sum.dir/build.make CMakeFiles/row_sum.dir/row_sum.cc.i
+.PHONY : row_sum.cc.i
+
+row_sum.s: row_sum.cc.s
+.PHONY : row_sum.s
+
+# target to generate assembly for a file
+row_sum.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/row_sum.dir/build.make CMakeFiles/row_sum.dir/row_sum.cc.s
+.PHONY : row_sum.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +236,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... identity"
+	@echo "... rms_norm"
+	@echo "... row_sum"
 	@echo "... identity.o"
 	@echo "... identity.i"
 	@echo "... identity.s"
+	@echo "... rms_norm.o"
+	@echo "... rms_norm.i"
+	@echo "... rms_norm.s"
+	@echo "... row_sum.o"
+	@echo "... row_sum.i"
+	@echo "... row_sum.s"
 .PHONY : help
 
 

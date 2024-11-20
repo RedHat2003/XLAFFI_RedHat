@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,row_sum.so -o row_sum.so CMakeFiles/row_sum.dir/row_sum.cc.o 

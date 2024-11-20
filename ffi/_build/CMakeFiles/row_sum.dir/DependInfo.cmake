@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/identity.cc" "CMakeFiles/identity.dir/identity.cc.o" "gcc" "CMakeFiles/identity.dir/identity.cc.o.d"
+  "/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/row_sum.cc" "CMakeFiles/row_sum.dir/row_sum.cc.o" "gcc" "CMakeFiles/row_sum.dir/row_sum.cc.o.d"
   )
 
 # Targets to which this target links.

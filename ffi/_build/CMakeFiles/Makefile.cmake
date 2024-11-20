@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/redhat_pc/redhat_files/projects/SEE/ffi/CMakeLists.txt"
+  "/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/CMakeLists.txt"
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
@@ -96,6 +96,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPython/Support.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPython3.cmake"
   "/usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake"
@@ -123,5 +127,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/rms_norm.dir/DependInfo.cmake"
+  "CMakeFiles/row_sum.dir/DependInfo.cmake"
   "CMakeFiles/identity.dir/DependInfo.cmake"
   )
