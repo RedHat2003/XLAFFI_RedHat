@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,identity.so -o identity.so CMakeFiles/identity.dir/identity.cc.o 
