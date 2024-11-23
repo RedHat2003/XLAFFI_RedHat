@@ -155,6 +155,19 @@ identity/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/identity.dir/build.make CMakeFiles/identity.dir/build
 .PHONY : identity/fast
 
+#=============================================================================
+# Target rules for targets named sayhi
+
+# Build rule for target.
+sayhi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sayhi
+.PHONY : sayhi
+
+# fast build rule for target.
+sayhi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/build
+.PHONY : sayhi/fast
+
 identity.o: identity.cc.o
 .PHONY : identity.o
 
@@ -178,6 +191,30 @@ identity.s: identity.cc.s
 identity.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/identity.dir/build.make CMakeFiles/identity.dir/identity.cc.s
 .PHONY : identity.cc.s
+
+new.o: new.cc.o
+.PHONY : new.o
+
+# target to build an object file
+new.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/new.cc.o
+.PHONY : new.cc.o
+
+new.i: new.cc.i
+.PHONY : new.i
+
+# target to preprocess a source file
+new.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/new.cc.i
+.PHONY : new.cc.i
+
+new.s: new.cc.s
+.PHONY : new.s
+
+# target to generate assembly for a file
+new.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/new.cc.s
+.PHONY : new.cc.s
 
 rms_norm.o: rms_norm.cc.o
 .PHONY : rms_norm.o
@@ -238,9 +275,13 @@ help:
 	@echo "... identity"
 	@echo "... rms_norm"
 	@echo "... row_sum"
+	@echo "... sayhi"
 	@echo "... identity.o"
 	@echo "... identity.i"
 	@echo "... identity.s"
+	@echo "... new.o"
+	@echo "... new.i"
+	@echo "... new.s"
 	@echo "... rms_norm.o"
 	@echo "... rms_norm.i"
 	@echo "... rms_norm.s"

@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build
 all: CMakeFiles/rms_norm.dir/all
 all: CMakeFiles/row_sum.dir/all
 all: CMakeFiles/identity.dir/all
+all: CMakeFiles/sayhi.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/rms_norm.dir/clean
 clean: CMakeFiles/row_sum.dir/clean
 clean: CMakeFiles/identity.dir/clean
+clean: CMakeFiles/sayhi.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -155,6 +157,32 @@ identity: CMakeFiles/identity.dir/rule
 CMakeFiles/identity.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/identity.dir/build.make CMakeFiles/identity.dir/clean
 .PHONY : CMakeFiles/identity.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sayhi.dir
+
+# All Build rule for target.
+CMakeFiles/sayhi.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles --progress-num=7,8 "Built target sayhi"
+.PHONY : CMakeFiles/sayhi.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sayhi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sayhi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/redhat_pc/redhat_files/projects/XLAFFI/ffi/_build/CMakeFiles 0
+.PHONY : CMakeFiles/sayhi.dir/rule
+
+# Convenience name for target.
+sayhi: CMakeFiles/sayhi.dir/rule
+.PHONY : sayhi
+
+# clean rule for target.
+CMakeFiles/sayhi.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sayhi.dir/build.make CMakeFiles/sayhi.dir/clean
+.PHONY : CMakeFiles/sayhi.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

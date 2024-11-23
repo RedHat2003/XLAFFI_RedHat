@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Drow_sum_EXPORTS
 
-CXX_INCLUDES = -I/home/redhat_pc/.pyenv/versions/redhat3.13.0/lib/python3.13/site-packages/jaxlib/include
+CXX_INCLUDES = 
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wno-attributes -Wno-return-type -std=gnu++17
+CXX_FLAGS = -fPIC -Wno-attributes -Wno-return-type -std=gnu++17
 

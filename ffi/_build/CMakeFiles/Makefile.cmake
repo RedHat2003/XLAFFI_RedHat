@@ -96,10 +96,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake"
-  "/usr/share/cmake-3.25/Modules/FindPython/Support.cmake"
-  "/usr/share/cmake-3.25/Modules/FindPython3.cmake"
   "/usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake"
@@ -130,4 +126,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rms_norm.dir/DependInfo.cmake"
   "CMakeFiles/row_sum.dir/DependInfo.cmake"
   "CMakeFiles/identity.dir/DependInfo.cmake"
+  "CMakeFiles/sayhi.dir/DependInfo.cmake"
   )

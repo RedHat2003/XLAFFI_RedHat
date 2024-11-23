@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,sayhi.so -o sayhi.so CMakeFiles/sayhi.dir/new.cc.o  -lxla 

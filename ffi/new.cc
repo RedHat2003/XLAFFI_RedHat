@@ -1,38 +1,24 @@
-// ffi/sumrows.cc
-
-#include <cstdint>
-
-#include "xla/ffi/api/c_api.h"
+#include <cstdio> 
 #include "xla/ffi/api/ffi.h"
+#include "xla/ffi/api/c_api.h"
+namespace ffi = xla::ffi ; 
 
-namespace ffi = xla::ffi;
+ffi::Error SayHi(ffi::BufferR1 <ffi::F32> x , ffi::Result<ffi::BufferR1<ffi::F32>> y ){
+	const float* data_x = x.typed_data() ; 
+	float* data_y = y->typed_data() ; 
+	printf ("u are finally there !");
+	for (int i = 0 ; i < 4 ; i ++) {
+	
+		data_y[i]  = data_x [i] ; 
+	}
 
-// Define fixed dimensions for the matrix
-constexpr int64_t ROWS = 4;  // Number of rows
-constexpr int64_t COLS = 3;  // Number of columns
-
-ffi::Error SumRows(ffi::Buffer<ffi::F32> input, ffi::ResultBuffer<ffi::F32> output) {
-    const float* input_data = input.typed_data();
-    float* output_data = output->typed_data();
-
-    // Sum each row
-    for (int64_t row = 0; row < ROWS; ++row) {
-        float sum = 0.0f;
-        for (int64_t col = 0; col < COLS; ++col) {
-            sum += input_data[row * COLS + col];
-        }
-        output_data[row] = sum;
-    }
-
-    return ffi::Error::Success();
+	return ffi::Error::Success();
 }
 
-// Register the SumRows FFI handler with XLA
+
 XLA_FFI_DEFINE_HANDLER_SYMBOL(
-    SumRows,      // Handler name as referenced in Python
-    SumRows,      // C++ function implementing the handler
+    Print, SayHi,
     ffi::Ffi::Bind()
-        .Arg<ffi::Buffer<ffi::F32>>()      // Input buffer (matrix)
-        .Ret<ffi::Buffer<ffi::F32>>()      // Output buffer (vector)
-);
+        .Arg<ffi::BufferR1<ffi::F32>>()
+        .Ret<ffi::BufferR1<ffi::F32>>());  // Ensure closing parenthesis
 
